@@ -1,0 +1,17 @@
+Program Creators: Favour Okereke-Mba and Timi Dayo-Kayode
+
+We received help from the TA's; specifically Katie, Chris, Kira, and Ashton. The
+only other collaborators that we are aware of are ourselves. 
+
+The Brightness module prints the average brightness of a grayscale image
+
+The readaline module is to read a single line of input from file inputfd, which is presumed to have been opened for reading. 
+
+The simlines module read any number of files and detect lines in the files that are similar to each other.
+
+We have correctly implemented brightness, readaline, and simlines to the best
+of our knowledge and as specified by the homework. Our readaline is capable of
+reading lines of character size > 200
+
+We spent approximately 20 hours completing this assignment, including going 
+over the specs and reading about Hanson's ADS

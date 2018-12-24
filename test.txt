@@ -1,0 +1,363 @@
+Dear Favour,
+
+This message is generated automatically.
+
+Below you will find your grades for the 'filesnpix' assignment.
+
+Norman Ramsey's grade-keeping program
+
+
+Favour Okereke-Mba: Evaluation of COMP 40 'filesnpix' assignment
+================================================================
+
+Work submitted by: Favour Okereke-Mba
+                   Timi Dayo-Kayode
+
+Grades
+~~~~~~
+Design (10%): Very Good
+
+Structure of the brightness program (5%): Very Good
+
+     Your code is clear, concise and well-organized.
+
+     Your main function is more than 30 lines long, and your
+     program would be more readible if were decomposed into
+     separate functions.
+
+Structure of the readaline function (10%): Good
+
+     Your code is clear, concise and well-organized.
+
+     Function comments are a useful addition to both the interface
+     and the implementation.  Function comments in the interface
+     provide a clear, concise contract for the user, while
+     implementation function comments give more detail about
+     implementation choices and complexities for the developer.
+     We expect to see both in code that you write, with attention
+     to the different purposes of each.
+
+Structure of the simlines program (25%): Very Good
+
+     Your code is clear, concise and well-organized.
+
+     Your code in your main function is very deeply nested,
+     and would be easier to follow if decomposed into separate
+     functions
+
+     In your program you make calls to malloc but do not check that
+     the value returned is not NULL (signifying that the machine
+     is out of memory).  You should ALWAYS check the result of
+     malloc to ensure it did not return NULL before attempting to
+     use the variable.
+
+Functional correctness of the brightness program (15%): Very Good
+
+     Passed all 35 tests.
+
+Functional correctnes of the readaline function (10%): Very Good
+
+     Passed 24, Failed 2, Timed out 0 in testset readaline
+
+     Passed tests: (OPTIONAL) Long file supported, (REQUIRED)
+     Long file processed or exit(4), Build an executable using
+     readaline.o, COMP 40 home pages from different years, Easily
+     confused with EOF, Empty file processed twice, File with no
+     duplicates processed once, File with no duplicates processed
+     three times, File with no duplicates processed twice, File
+     with no dups and file with tabs and spaces, File with null
+     only, File with three empty lines, Leading spaces and blank
+     lines, Mixed case potential matches, Punctuation characters
+     as separators, Trailing spaces and blank lines, Two files
+     with no matches, Under bar as word character, Underbar as
+     separate word, Word pairs space separated processed once,
+     Word pairs space separated processed three times, Word pairs
+     space separated processed twice, Word separated by tabs or
+     spaces, Words differ only after null
+
+     Failed tests: Binary file: the 'cat' executable twice, The
+     named file does not exist
+
+     Failure reasons: Contents of results file stdout are incorrect
+     (1) Program did not terminate with Hanson exception (1)
+
+     Valgrind results: Errors: 1, Passed: 10
+
+Functional correctness of the simlines program (25%): Good
+
+     Passed 17, Failed 6, Timed out 0 in testset simlines
+
+     Passed tests: Empty file processed twice, File with no
+     duplicates processed once, File with no duplicates processed
+     three times, File with no duplicates processed twice, File
+     with no dups and file with tabs and spaces, File with three
+     empty lines, Leading spaces and blank lines, Mixed case
+     potential matches, No arguments on command line, Punctuation
+     characters as separators, Tens of thousands of matches, Two
+     files with no matches, Under bar as word character, Underbar
+     as separate word, Word pairs space separated processed once,
+     Word pairs space separated processed three times, Word pairs
+     space separated processed twice
+
+     Failed tests: Binary file: the 'cat' executable twice, Easily
+     confused with EOF, Long Lines: COMP 40 home pages from
+     different years, The named file does not exist, Trailing
+     spaces and blank lines, Word separated by tabs or spaces
+
+     Failure reasons: Program did not terminate with Hanson
+     exception (1) stdout is not correct (5)
+
+     Valgrind results: HeapInUse: 15, Passed: 3
+
+
+(No extra credit)
+
+
+
+
+
+How your work was evaluated
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Part A: Brightness of a grayscale image
+---------------------------------------
+Your programs for computing brightness of a grayscale image were evaluated for
+functional correctness and for structure and organization.
+For structure and organization, your grades were primarily determined
+by the following:
+
+  - Did your functions provide a clear contract, either with a
+    descriptive name or with written documentation? If written
+    documentation was provided, was it free of a narrative description
+    of the code?
+
+  - Did you write modular code by providing concise compositional
+    functions?  In particular, was there a separation between
+    computing the average brightness and printing the average
+    brightness to stdout?
+
+  - Adherence to course             coding standards.
+
+Submissions that met all standards earned Very Good grades.
+Submissions that did not meet one of the above standards earned Good
+grades. 
+Submissions that did not meet any of these standards earned Fair grades.
+
+Approximately than a 30% of students earned Very Good or better, which is down close to previous years, but over 95% of students got Good or better. That's way up from recent terms!
+
+For functional correctness, we ran your programs through 35 different automated 
+tests. The tests checked whether your programs had memory errors, produced 
+correct average brightness values, could read from a file or from stdin,
+handled invalid input correctly and had output formatted as described in the 
+assignment specification. We compiled and ran your programs on the 'homework' 
+server.
+
+Caps for memory leaks and memory errors were applied as in the course
+standards. Submissions with segmentation faults earned No Credit.
+
+Otherwise, submissions that passed all 35 tests earned Very Good grades.
+Submissions with 22 or more tests passed earned Good grades, 11 or more earned 
+Fair grades, 1 or more earned Poor grades and no tests passed earned No Credit.
+
+In your feedback, we list all the tests and the numbers of tests you
+passed and failed. We also provided the expected and actual output for
+some tests that your program failed.  If your program's output is
+different from expected output, then the test failed. This includes
+even a small deviation from the output format---such as a single
+leading space.
+
+Overall, over 55% of submissions earned a VG and 78% earned a G or better.
+
+Part B: Readaline
+-----------------
+
+Your implementations of the readaline function were evaluated for structure and
+organization, as well as functional correctness.
+
+When evaluating structure and organization, the main details we
+focused on were:
+
+  - Was your code clear, either through use of good function and
+    variable names, and/or through clear documentation and explicit
+    function contracts?
+
+  - Adherence to course coding standards.
+
+We also took into account the modularity of your solution. Though we
+only asked you to write one function for readaline, some good
+solutions used more. As long as the result was well organized and easy
+to follow, you earned a strong grade.
+
+Well over three quarters of students earned a Good or better for
+structure and organization - over a third earned a VG or above.
+
+To test the function of your readaline, we use your Makefile to
+produce a readaline.o, and then link the result with a program that
+uses your readaline to read through one or more files.  For each line
+that you return to us, we log the length you report and the data. We
+then ensure that your results match what we get from a known good
+implementation of readaline.  We also on every call make sure that you
+do update *datap, as is required by the interface.
+
+Many of the files we used were the same ones we developed for Part C,
+typically containing a few lines of text, but sometimes with empty
+lines, null characters, etc.  We also opened a non-existent file and
+passed the resulting (bad) file descriptor to your readaline, which
+should cause it to end with a Checked Runtime Error (Failed Hanson
+Assertion or other Hanson Exception).
+
+Of course, if your readaline did not compile or did not link properly
+with the test program, you got no credit on any of the tests and thus
+NC for part B.
+
+The interface requires that you either support lines of unbounded
+length, or else exit with status code 4 and a specific string on
+stderr for inputs longer than 200.  You will see two test cases
+relating to long line support.  The one labeled (REQUIRED) merely
+ensures that if you could not properly handle the long lines that you
+did exit with code 4 and the required stderr.  All submissions should
+be able to pass this test.
+
+The test labeled (OPTIONAL) tests whether you actually could correctly
+read long lines. In general, students who passed that test and missed
+no more than one other received E. Students who failed no more than 2
+two tests received at least VG, in all cases assuming there were no
+segfaults or valgrind errors.
+
+Two of the tests are new as of Fall 2016 and are particularly
+stringent. One includes the character 0xff. What makes this tricky
+is that if you make the mistake of assigning the result of the getc
+or fgetc functions to a character instead of an integer, you might
+confuse this character with an EOF condition. The other new test
+reads a binary file (actually, the executable "cat" program from
+/bin/cat). Correct implementations of readaline can read any file,
+breaking it into "lines" wherever newline characters happen to
+be. Many students failed these demanding tests, and we did not
+weight them heavily in assigning letter grades, unless either
+resulted in a segfault. Your code should never segfault on any
+input.
+
+Indeed, the course grading policy is that any test that results in
+a segfault yields NC (No Credit) for that entire section.  For the
+most part, we enforced that rule, but for a few students who
+otherwise did very well we raised that to a P (Poor).  Segfaults
+are serious errors, and in general they will not be tolerated in
+code that is to receive a passing grade.  To avoid double jeopardy,
+we did not impose a similar penalty in Part C if we felt that the
+Segfault there was the same already seen in part B.  Many of the 
+Segfaults were the result of not checking if the file pointer
+was valid.
+
+Also consistent with course policy, Valgrind errors cap the possible
+grades at F (Fair). Programs with memory leaks earn at best a G
+(Good).
+
+About 37% of submissions passed 21 or more tests, with 15 VG grades and 7 E
+grades. Unfortunately, many of these submissions were subsequently penalized
+for valgrind problems or segfaults.
+
+Everyone else generally scored P or below, although there was one G grade
+and one F. 
+
+
+Part C: Similar Lines
+---------------------
+
+Your programs for computing similar lines were evaluated for
+functional correctness and for structure and organization.
+
+Much like our evaluation of your readaline functions, your grades for
+structure and organization were primarily determined by the following:
+
+  - Was your code clear, either through use of good function and
+    variable names, and/or through clear documentation and explicit
+    function contracts?
+
+  - Was your function composition appropriate and did you make 
+    good choices about whether and how to split your program
+    into multiple source files?  
+
+  - Adherence to course coding standards
+
+Separating code into separate source files (which some course
+materials refer to as modules) can be an excellent approach to
+organizing your code.  There are at least two reasons to do this, and
+the first is the most compelling:
+
+  1) The functions in the source code implement a useful service for 
+     the rest of the implementation, and together they "keep a secret 
+     (or secrets)" from their callers 
+
+  2) In the case where a source file would naturally be long, it's
+     reasonable sometimes to split the files into separate source files,
+     but only if the groupings put closely related functions or services
+     together
+ 
+For simlines, you did not have to split your code to receive a Very
+Good grade; if you split it, your grade may be somewhat improved or
+reduced depending on whether the split was sensible and added value
+compared to the single-source file approach.
+
+As with readaline, the large majority (over 80%) of structure and
+organization grades were a Good or better. Over half of
+submissions earned a VG or better.
+
+We tested your simlines program on a variety of input files, and also
+as in part B we invoked your program with no arguments and naming a
+nonexistent file.  Some of the files include patterns designed
+specifically to test features of the simlines specification including
+leading whitespace, '_' is a word character, etc. Two of the files had
+\0 (NUL) characters, which are allowed by the specification if you
+read it carefully.
+
+We also tested your simlines on the two new tests (the EOF spoofer
+and the binary "cat" executable) discussed under readaline. Again,
+we report these results, but do not weigh them heavily in assigning
+your letter grade.
+
+There were 23 total tests. Except when there were segfaults or
+Valgrind errors, grading is based on the number of tests you
+passed according to the following mapping:
+
+     21 - 23:  E
+     18 - 20: VG
+     16 - 17:  G
+       <= 15:  F (or below)
+
+In this unit, there are a number of formatting mistakes that caused
+many students to fail large numbers of tests.  These included
+putting a newline before the first match group, and extra newline
+after the last match group, and/or incorrect spacing of the
+filename/linenumber match lines. To help you understand these
+failures, our grading program goes through the output of all tests
+that failed due to incorrect output. It fixes those specific
+errors, and reruns the grading tests on the result. If the result
+is then correct, then the test is listed as "Almost Passed" in your
+grade report.
+
+Historically in COMP 40, such errors resulted in no credit for the
+corresponding tests. Starting in fall 2016 year we have been a bit
+more generous. First, we assigned a tentative grade based on the
+number of tests you did pass. We then added in the additional tests
+that you almost passed, graded based on that total, and reduced your
+grade by one level. Thus, a student who passed 4 tests, but almost
+passed 14 would get a G (4 + 14 = 18, which is a VG, reduce by one to
+get G). You received the higher the two grades, which in this case is
+the G. Note that if you got 18 correct and 1 almost correct, your
+grade is still VG.
+
+We followed the course rules regarding Valgrind errors (caps your
+grade at F), memory leaks (cap at G), and Segfaults (No Credit),
+except that we did not penalize you for a Segfault if in our opinion
+it was coming from a readaline error that we have already detected in
+Part B.  We also did not penalize you for Valgrind memory leaks due
+to use of the Hanson Atom implementation, which manifested as
+"HeapInUse" errors in this unit.
+
+More than half of submissions scored G or better, including 19 VG grades
+and 10 E grades, although a few were penalized for valgrind problems.
+19 submissions scored F or below before penalties, including 13 P grades. 
+
+
+
+
